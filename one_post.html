@@ -1,0 +1,9 @@
+{% extends 'post_book/base.html' %}
+{% block title %}Description - {{onepost.title}}{% endblock %}
+{% block content %}
+    <p>{{onepost.title}}</p>
+    <p>{{onepost.author}}</p>
+    <p>{{onepost.date_pub}}</p>
+    <p>{{onepost.description}}</p>
+    <img src="{{onepost.header_image.url}}" alt="">
+{% endblock %}
